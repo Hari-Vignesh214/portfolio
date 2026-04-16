@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hari Vignesh | Software Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">HV<span class="red">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#bio">Bio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#resume" class="nav-cta">Resume</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#bio" onclick="closeMobile()">Bio</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#education" onclick="closeMobile()">Education</a>
+    <a href="#resume" onclick="closeMobile()">Resume</a>
+  </div>
+
+  <!-- HERO / BIO -->
+  <section class="hero" id="bio">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-title">
+        Hari Vignesh<br />
+        <span class="hero-title-sub">Muralidharan</span>
+      </h1>
+      <p class="hero-role">Software Engineer &amp; AI/ML Enthusiast</p>
+      <p class="hero-location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Seattle, WA &nbsp;|&nbsp; Open to Relocate
+      </p>
+      <p class="hero-bio">
+        Full-stack engineer with <strong>6+ years</strong> of experience building enterprise-grade
+        applications at scale. At Intel Corporation, I led petabyte-scale ETL pipelines,
+        Angular Micro Frontend architectures, and AI/ML-integrated workflows supporting
+        5000+ daily users. Passionate about <strong>LLM Orchestration</strong>,
+        <strong>Multi-Agent Systems</strong>, and <strong>GenAI Workflows</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          View Projects
+        </a>
+        <a href="#experience" class="btn btn-secondary">
+          More Info
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5K+</span>
+          <span class="stat-label">Daily Active Users</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">99.9%</span>
+          <span class="stat-label">Data Integrity SLA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">45%</span>
+          <span class="stat-label">Performance Gains</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-header">
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <span class="section-tag">Tech Stack</span>
+    </div>
+
+    <div class="skills-block">
+      <h3 class="skills-category-title">Languages</h3>
+      <div class="row-wrapper">
+        <button class="row-btn row-btn-left" onclick="scrollRow('lang', -1)">&#8249;</button>
+        <div class="skills-row" id="lang">
+          <div class="skill-card"><div class="skill-icon">Py</div><span>Python</span></div>
+          <div class="skill-card"><div class="skill-icon">C#</div><span>C#</span></div>
+          <div class="skill-card"><div class="skill-icon">TS</div><span>TypeScript</span></div>
+          <div class="skill-card"><div class="skill-icon">C+</div><span>C++</span></div>
+          <div class="skill-card"><div class="skill-icon">JS</div><span>JavaScript</span></div>
+          <div class="skill-card"><div class="skill-icon">Jv</div><span>Java</span></div>
+          <div class="skill-card"><div class="skill-icon">SQ</div><span>SQL</span></div>
+          <div class="skill-card"><div class="skill-icon">H5</div><span>HTML5</span></div>
+          <div class="skill-card"><div class="skill-icon">CS</div><span>CSS3</span></div>
+        </div>
+        <button class="row-btn row-btn-right" onclick="scrollRow('lang', 1)">&#8250;</button>
+      </div>
+    </div>
+
+    <div class="skills-block">
+      <h3 class="skills-category-title">AI &amp; Design</h3>
+      <div class="row-wrapper">
+        <button class="row-btn row-btn-left" onclick="scrollRow('ai', -1)">&#8249;</button>
+        <div class="skills-row" id="ai">
+          <div class="skill-card ai-card"><div class="skill-icon">LLM</div><span>LLM Orchestration</span></div>
+          <div class="skill-card ai-card"><div class="skill-icon">RAG</div><span>RAG</span></div>
+          <div class="skill-card ai-card"><div class="skill-icon">A2A</div><span>Agent-to-Agent</span></div>
+          <div class="skill-card ai-card"><div class="skill-icon">MAS</div><span>Multi-Agent Systems</span></div>
+          <div class="skill-card ai-card"><div class="skill-icon">Gen</div><span>GenAI Workflows</span></div>
+          <div class="skill-card ai-card"><div class="skill-icon">SDD</div><span>Spec-Driven Dev</span></div>
+          <div class="skill-card ai-card"><div class="skill-icon">PE</div><span>Prompt Engineering</span></div>
+        </div>
+        <button class="row-btn row-btn-right" onclick="scrollRow('ai', 1)">&#8250;</button>
+      </div>
+    </div>
+
+    <div class="skills-block">
+      <h3 class="skills-category-title">Frameworks</h3>
+      <div class="row-wrapper">
+        <button class="row-btn row-btn-left" onclick="scrollRow('fw', -1)">&#8249;</button>
+        <div class="skills-row" id="fw">
+          <div class="skill-card"><div class="skill-icon">.N</div><span>.NET Core</span></div>
+          <div class="skill-card"><div class="skill-icon">Ng</div><span>Angular</span></div>
+          <div class="skill-card"><div class="skill-icon">Re</div><span>React.js</span></div>
+          <div class="skill-card"><div class="skill-icon">Dj</div><span>Django</span></div>
+          <div class="skill-card"><div class="skill-icon">Nd</div><span>Node.js</span></div>
+          <div class="skill-card"><div class="skill-icon">Sp</div><span>Spring</span></div>
+          <div class="skill-card"><div class="skill-icon">Vu</div><span>Vue.js</span></div>
+          <div class="skill-card"><div class="skill-icon">FA</div><span>FastAPI</span></div>
+          <div class="skill-card"><div class="skill-icon">Fl</div><span>Flask</span></div>
+          <div class="skill-card"><div class="skill-icon">GQ</div><span>GraphQL</span></div>
+        </div>
+        <button class="row-btn row-btn-right" onclick="scrollRow('fw', 1)">&#8250;</button>
+      </div>
+    </div>
+
+    <div class="skills-block">
+      <h3 class="skills-category-title">Cloud &amp; Databases</h3>
+      <div class="row-wrapper">
+        <button class="row-btn row-btn-left" onclick="scrollRow('cloud', -1)">&#8249;</button>
+        <div class="skills-row" id="cloud">
+          <div class="skill-card cloud-card"><div class="skill-icon">AWS</div><span>AWS</span></div>
+          <div class="skill-card cloud-card"><div class="skill-icon">Az</div><span>Azure</span></div>
+          <div class="skill-card cloud-card"><div class="skill-icon">GCP</div><span>GCP</span></div>
+          <div class="skill-card cloud-card"><div class="skill-icon">K8s</div><span>Kubernetes</span></div>
+          <div class="skill-card cloud-card"><div class="skill-icon">Kf</div><span>Kafka</span></div>
+          <div class="skill-card cloud-card"><div class="skill-icon">Hd</div><span>Hadoop</span></div>
+          <div class="skill-card cloud-card"><div class="skill-icon">PG</div><span>PostgreSQL</span></div>
+          <div class="skill-card cloud-card"><div class="skill-icon">Mg</div><span>MongoDB</span></div>
+          <div class="skill-card cloud-card"><div class="skill-icon">Cos</div><span>CosmosDB</span></div>
+          <div class="skill-card cloud-card"><div class="skill-icon">Dkr</div><span>Docker</span></div>
+        </div>
+        <button class="row-btn row-btn-right" onclick="scrollRow('cloud', 1)">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-header">
+      <h2 class="section-title">Experience</h2>
+      <span class="section-tag">Career Timeline</span>
+    </div>
+    <div class="experience-grid">
+
+      <div class="exp-card featured-exp">
+        <div class="exp-card-inner">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Intel Corporation</div>
+              <div class="exp-role">Software Engineer</div>
+            </div>
+            <div class="exp-meta">
+              <div class="exp-location">Hillsboro, OR</div>
+              <div class="exp-date">Aug 2023 – Aug 2025</div>
+            </div>
+          </div>
+          <div class="exp-tag-list">
+            <span class="exp-tag">Full-Stack</span>
+            <span class="exp-tag">AI/ML</span>
+            <span class="exp-tag">Data Engineering</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>Automation:</strong> Migrated legacy JMP dashboard to Angular Micro Frontends, reducing manual analysis by <strong>25+ hours/week</strong>.</li>
+            <li><strong>ETL Pipelines:</strong> Designed petabyte-scale ETL pipelines with Python &amp; Apache Airflow — <strong>99.9% data integrity SLA</strong>.</li>
+            <li><strong>AI/ML:</strong> Built anomaly detection &amp; ranking algorithms with scikit-learn, pandas on Apache Spark pipelines.</li>
+            <li><strong>Full-Stack:</strong> Maintained modular SPAs (.NET Core, Django REST) supporting <strong>5,000+ daily active users</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-card-inner">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Intel Corporation</div>
+              <div class="exp-role">Full-Stack Developer Intern</div>
+            </div>
+            <div class="exp-meta">
+              <div class="exp-location">Hillsboro, OR</div>
+              <div class="exp-date">Aug 2022 – May 2023</div>
+            </div>
+          </div>
+          <div class="exp-tag-list">
+            <span class="exp-tag">Angular</span>
+            <span class="exp-tag">Security</span>
+            <span class="exp-tag">Performance</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Migrated graph analytics module, reducing load time by <strong>40%</strong>.</li>
+            <li>Engineered JWT &amp; OAuth 2.0 secure access layer with <strong>100% real-time data accuracy</strong>.</li>
+            <li>Implemented lazy loading &amp; code refactoring for <strong>35% performance improvement</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-card-inner">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Capgemini (GE Aviation)</div>
+              <div class="exp-role">Senior Software Engineer</div>
+            </div>
+            <div class="exp-meta">
+              <div class="exp-location">Bangalore, India</div>
+              <div class="exp-date">Aug 2018 – Jun 2021</div>
+            </div>
+          </div>
+          <div class="exp-tag-list">
+            <span class="exp-tag">ASP.NET MVC</span>
+            <span class="exp-tag">Oracle PL/SQL</span>
+            <span class="exp-tag">Leadership</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led Classic ASP to ASP.NET MVC migration — <strong>45% performance boost</strong>, <strong>30%</strong> less maintenance overhead.</li>
+            <li>Led code reviews improving team performance by <strong>20%</strong>; implemented CSRF protection.</li>
+            <li>Optimized Oracle PL/SQL Triggers &amp; Procedures, saving clients <strong>$350–$500/month</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-header">
+      <h2 class="section-title">Projects</h2>
+      <span class="section-tag">Featured Work</span>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card featured-project">
+        <div class="project-badge">Featured</div>
+        <div class="project-body">
+          <h3 class="project-title">aiMarrvel Web App</h3>
+          <p class="project-year">2023</p>
+          <p class="project-desc">
+            A secure, HIPAA-compliant web-based job submission system developed in collaboration with
+            <strong>Baylor College of Medicine</strong> and <strong>University of Houston–Clear Lake</strong>.
+            Enables users to upload VCF and HPO files to generate ranked variant outputs with batch
+            processing and a global variant search feature.
+          </p>
+          <div class="project-tech">
+            <span>MongoDB</span>
+            <span>Express.js</span>
+            <span>Angular</span>
+            <span>Node.js</span>
+            <span>AWS</span>
+            <span>Jasmine</span>
+            <span>Artillery.io</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              HIPAA Compliant Auth &amp; Access Controls
+            </div>
+            <div class="highlight">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Batch Processing for Multi-file Uploads
+            </div>
+            <div class="highlight">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Global Variant Search &amp; Rank Matrix Filtering
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-body">
+          <h3 class="project-title">Smart Irrigation System</h3>
+          <p class="project-year">Research</p>
+          <p class="project-desc">
+            Award-winning research on IoT-based smart irrigation, presented at
+            MIT and Sri Sairam College of Engineering. Automated irrigation decisions
+            using sensor data and intelligent control systems.
+          </p>
+          <div class="project-tech">
+            <span>IoT</span>
+            <span>Embedded C</span>
+            <span>Sensors</span>
+            <span>Research</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Presented at MIT
+            </div>
+            <div class="highlight">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Award-Winning Research
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-body">
+          <h3 class="project-title">Enterprise ETL Platform</h3>
+          <p class="project-year">Intel · 2023–2025</p>
+          <p class="project-desc">
+            Petabyte-scale ETL pipelines using Python and Apache Airflow, enabling reliable
+            data ingestion from Hadoop to downstream services with a 99.9% data integrity SLA.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Apache Airflow</span>
+            <span>Apache Spark</span>
+            <span>Hadoop</span>
+            <span>scikit-learn</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Petabyte-Scale Processing
+            </div>
+            <div class="highlight">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              99.9% Data Integrity SLA
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-header">
+      <h2 class="section-title">Education</h2>
+      <span class="section-tag">Academic Background</span>
+    </div>
+    <div class="education-grid">
+
+      <div class="edu-card">
+        <div class="edu-degree-badge">M.S.</div>
+        <div class="edu-body">
+          <h3 class="edu-school">University of Houston – Clear Lake</h3>
+          <p class="edu-degree">Master of Science — Computer Science</p>
+          <p class="edu-date">May 2023 &nbsp;|&nbsp; Houston, TX</p>
+          <div class="edu-courses">
+            <span>Design &amp; Analysis of Algorithms</span>
+            <span>Data Mining Tools &amp; Techniques</span>
+            <span>Machine Learning</span>
+            <span>Database Systems</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-degree-badge">B.E.</div>
+        <div class="edu-body">
+          <h3 class="edu-school">Anna University</h3>
+          <p class="edu-degree">Bachelor of Engineering — Computer Science</p>
+          <p class="edu-date">May 2018 &nbsp;|&nbsp; Chennai, India</p>
+          <div class="edu-courses">
+            <span>Design &amp; Analysis of Algorithms</span>
+            <span>Compiler Design</span>
+            <span>Theory of Computation</span>
+            <span>Data Structures</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Honors -->
+    <div class="honors-section">
+      <h3 class="honors-title">Honors &amp; Awards</h3>
+      <div class="honors-grid">
+        <div class="honor-card">
+          <div class="honor-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <p>Google Professional AI Certification (Coursera) — Generative AI &amp; ML Workflows</p>
+        </div>
+        <div class="honor-card">
+          <div class="honor-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <p>President, CSI Student Chapter — Led 50+ members, organized 15+ technical events at Anna University</p>
+        </div>
+        <div class="honor-card">
+          <div class="honor-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          </div>
+          <p>Award-winning research on "Smart Irrigation Based on IoT" — Presented at MIT &amp; Sri Sairam College</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="section resume-section" id="resume">
+    <div class="resume-inner">
+      <div class="resume-text">
+        <h2 class="resume-title">Resume</h2>
+        <p class="resume-sub">Download my resume or reach out directly.</p>
+        <div class="resume-actions">
+          <a href="Hari_Vignesh_Resume.pdf" download class="btn btn-primary" id="resumeBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            Download Resume
+          </a>
+          <a href="mailto:harivignesheswari@gmail.com" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Contact Me
+          </a>
+        </div>
+        <div class="contact-links">
+          <a href="https://linkedin.com/in/harivigneshcse/" target="_blank" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            linkedin.com/in/harivigneshcse
+          </a>
+          <a href="https://github.com/Hari-Vignesh214" target="_blank" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            github.com/Hari-Vignesh214
+          </a>
+          <a href="tel:+14255201208" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            +1 (425) 520-1208
+          </a>
+        </div>
+      </div>
+      <div class="resume-visual">
+        <div class="resume-card-preview">
+          <div class="rp-line rp-title"></div>
+          <div class="rp-line rp-sub"></div>
+          <div class="rp-spacer"></div>
+          <div class="rp-line"></div>
+          <div class="rp-line rp-short"></div>
+          <div class="rp-line"></div>
+          <div class="rp-spacer"></div>
+          <div class="rp-line"></div>
+          <div class="rp-line rp-short"></div>
+          <div class="rp-line rp-medium"></div>
+          <div class="rp-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">HV<span class="red">.</span></div>
+    <p class="footer-copy">&copy; 2025 Hari Vignesh Muralidharan. Built with passion.</p>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/harivigneshcse/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Hari-Vignesh214" target="_blank">GitHub</a>
+      <a href="mailto:harivignesheswari@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
